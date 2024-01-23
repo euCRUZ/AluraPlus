@@ -1,0 +1,156 @@
+:root {
+    --white-main: #FFFFFF;
+    --grey-secondary: #C0C0C0;
+    --blue-button: #167BF7;
+    --bg-color: #00030C;
+    --main-font: 'Inter';
+    --blue-button-effect: #3C92FA;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--white-main);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-image: url("/images/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__button {
+    background-color: var(--blue-button);
+    border-radius: 5px;
+    padding: 1rem;
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.button_secundary {
+    background-color: transparent;
+    border: 2px solid var(--white-main);
+}
+
+.alert_container {
+    font-style: 12px;
+    color: var(--grey-secondary);
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    
+}
+
+.container_image {
+    margin: 1rem 0 2rem 0;
+}
+
+.container_box {
+    margin: 0 6em;
+}
+
+.secundary__image {
+    width: 100%;
+}
+
+.secundary {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.info_title {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--white-main);
+    margin-bottom: 0.2em;
+}
+
+.info_text {
+    color: var(--grey-secondary)
+}
+
+.secundary_button {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container_description {
+    padding: 2em;
+}
+
+.list_devices {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 5rem 0;
+}
+
+.devices {
+    text-align: center;
+}
+
+.title_devices {
+    font-size: 48px;
+    color: var(--white-main);
+}
+
+.list_text {
+    font-size: 32px;
+    color: var(--white-main);
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 2em;
+}
+
+.list__link a{
+    text-decoration: none;
+    color: var(--white-main);
+    margin-left: 1em;
+}
+
+.footer__text {
+    margin: 1.4rem 0;
+    color: var(--grey-secondary);
+    font-size: 14px;
+}
+
+.footer {
+    text-align: center;
+    margin: 8em 3em 2em 3em;
+}
+
+.list__link a:hover{
+    color: var(--blue-button);
+}
+
+.list__link a:active{
+    color: purple;
+}
+
+.container__button:hover {
+    background-color: var(--blue-button-effect);
+    color: black;
+}
